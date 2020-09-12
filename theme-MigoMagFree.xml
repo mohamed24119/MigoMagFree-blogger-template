@@ -1,0 +1,1398 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='2' b:layoutsVersion='2' b:responsive='true' b:templateVersion='1.3.0' expr:dir='data:blog.languageDirection' expr:id='&quot;blogId-&quot; + data:blog.blogId' lang='ar' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+  <head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#'>
+    <title>
+      <b:if cond='data:view.isHomepage'>
+        <data:blog.title/>
+        <b:elseif cond='data:view.isArchive'/>
+        أرشيف <data:blog.pageName/>
+        <b:elseif cond='!data:view.isError'/>
+        <data:blog.pageName/>
+        <b:elseif cond='data:view.isError'/>
+        404 | الصفحة غير موجودة
+        <b:else/>
+        <data:blog.title/>
+      </b:if>
+    </title>
+    <meta expr:charset='data:blog.encoding'/>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+    <meta content='blogger' name='generator'/>
+    <meta content='ar_AR' property='og:locale'/>
+    <meta content='#16a3b8' name='theme-color'/>
+    <meta content='#16a3b8' name='msapplication-navbutton-color'/>
+    <meta content='معرف الصفحة الشخصية لأدمن تطبيق فيسبوك' property='fb:admins'/>
+    <meta content='معرف تطبيق فيسبوك' property='fb:app_id'/>
+    <meta content='صفحة الناشر على الفيسوك' property='article:author'/>
+    <meta content='رابط البيدج على الفيسبوك' property='article:publisher'/>
+    <meta content='معرف البيدج على الفيسبوك' property='fb:pages'/>
+    <meta content='@username' name='twitter:site'/>
+    <meta content='@username' name='twitter:creator'/>
+    <link href='رابط الايقونة الايقونة' rel='icon' type='image/x-icon'/>
+    <link expr:href='data:view.url.canonical' rel='canonical'/>
+    <b:include name='MigoMagMetaTagDnsPrefetch'/>
+    <b:include name='MigoMagMetaTagUrl'/>
+    <b:include name='MigoMagMetaTagType'/>
+    <b:include name='MigoMagMetaTagTitle'/>
+    <b:include name='MigoMagMetaTagDescription'/>
+    <b:include name='MigoMagKeyWords'/>
+    <b:include name='MigoMagMetaTagImage'/>
+    <b:include name='MigoMagAppSearch'/>
+    <b:include name='MigoMagAppLogo'/>
+    <data:blog.feedLinks/>
+    <b:defaultmarkups>
+      <b:defaultmarkup type='Common'>
+        <b:includable id='MigoMagMetaTagDnsPrefetch'>
+          <link expr:href='data:blog.url' rel='dns-prefetch'/> 
+          <link expr:href='data:view.url' rel='dns-prefetch'/> 
+          <link href='//www.google.com' rel='dns-prefetch'/> 
+          <link href='//www.blogger.com' rel='dns-prefetch'/> 
+          <link href='//1.bp.blogspot.com' rel='dns-prefetch'/> 
+          <link href='//2.bp.blogspot.com' rel='dns-prefetch'/> 
+          <link href='//3.bp.blogspot.com' rel='dns-prefetch'/> 
+          <link href='//4.bp.blogspot.com' rel='dns-prefetch'/> 
+          <link href='//lh3.googleusercontent.com' rel='dns-prefetch'/> 
+          <link href='//cdnjs.cloudflare.com' rel='dns-prefetch'/> 
+          <link href='//pagead2.googlesyndication.com' rel='dns-prefetch'/> 
+          <link href='//accounts.google.com' rel='dns-prefetch'/> 
+          <link href='//ajax.googleapis.com' rel='dns-prefetch'/> 
+          <link href='//fonts.googleapis.com' rel='dns-prefetch'/> 
+          <link href='//resources.blogblog.com' rel='dns-prefetch'/> 
+          <link href='//www.google.com' rel='dns-prefetch'/>
+        </b:includable>
+        <b:includable id='MigoMagMetaTagUrl'>
+          <link expr:href='data:blog.url' rel='canonical'/> 
+          <meta expr:content='data:blog.url.canonical' property='og:url'/> 
+          <meta expr:content='data:blog.homepageUrl' name='twitter:domain'/>
+        </b:includable>
+        <b:includable id='MigoMagMetaTagType'>
+          <b:if cond='data:view.isSingleItem'> 
+            <meta content='article' property='og:type'/>
+            <b:else/> 
+            <meta content='website' property='og:type'/>
+          </b:if>
+        </b:includable>
+        <b:includable id='MigoMagMetaTagTitle'>
+          <meta expr:content='data:blog.title' property='og:site_name'/>
+          <b:if cond='data:view.isHomepage'> 
+            <meta expr:content='data:blog.title' property='og:title'/> 
+            <meta expr:content='data:blog.title' name='twitter:title'/>
+            <b:else/> 
+            <meta expr:content='data:blog.pageName' property='og:title'/> 
+            <meta expr:content='data:blog.pageName' name='twitter:title'/> 
+          </b:if>
+        </b:includable>
+        <b:includable id='MigoMagMetaTagDescription'>
+          <b:if cond='data:blog.metaDescription != &quot;&quot;'> 
+            <meta expr:content='data:blog.metaDescription' name='description'/> 
+            <meta expr:content='data:blog.metaDescription' property='og:description'/> 
+            <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+          </b:if>
+        </b:includable>
+        <b:includable id='MigoMagKeyWords'>
+          <b:if cond='data:view.isPost'> 
+            <meta expr:content='data:blog.pageName + &quot;, &quot; + data:blog.title' name='keywords'/>
+            <b:else/> 
+            <meta content='keywords1,keywords2,keywords3' name='keywords'/>
+          </b:if>
+        </b:includable>
+        <b:includable id='MigoMagMetaTagImage'>
+          <b:if cond='data:view.isSingleItem'>
+            <b:if cond='data:view.featuredImage'> 
+              <meta expr:content='resizeImage(data:view.featuredImage, 1200, &quot;1200:630&quot;)' name='image'/> 
+              <meta expr:content='resizeImage(data:view.featuredImage, 1200, &quot;1200:630&quot;)' property='og:image'/> 
+              <meta expr:content='resizeImage(data:view.featuredImage, 1200, &quot;1200:630&quot;)' name='twitter:image'/> 
+              <b:else/> 
+              <meta content='رابط صورة بديلة' property='og:image'/> 
+              <meta content='رابط صورة بديلة' name='twitter:image'/> 
+              <meta content='رابط صورة بديلة' name='image'/> </b:if> 
+            <b:else/> 
+            <meta content='رابط صورة بديلة' property='og:image'/> 
+            <meta content='رابط صورة بديلة' name='twitter:image'/> 
+            <meta content='رابط صورة بديلة' name='image'/> </b:if> 
+          <meta content='1200' property='image:width'/> 
+          <meta content='630' property='image:height'/> 
+          <meta content='summary_large_image' name='twitter:card'/>
+          <b:if cond='data:view.isHomepage'> 
+            <meta expr:content='data:blog.title' property='og:image:alt'/> 
+            <meta expr:content='data:blog.title' property='twitter:image:alt'/>
+            <b:else/> 
+            <meta expr:content='data:blog.pageName' property='og:image:alt'/> 
+            <meta expr:content='data:blog.pageName' property='twitter:image:alt'/>
+          </b:if>
+        </b:includable>
+        <b:includable id='MigoMagAppSearch'>
+          <script type='application/ld+json'>
+            {
+            &quot;@context&quot;:&quot;http://schema.org&quot;,
+            &quot;@type&quot;: &quot;WebSite&quot;,&quot;url&quot;: &quot;<data:blog.homepageUrl/>&quot;,
+            &quot;potentialAction&quot;: {
+            &quot;@type&quot;: &quot;SearchAction&quot;,&quot;target&quot;: &quot;<data:blog.homepageUrl/>?q={search_term}&quot;,
+            &quot;query-input&quot;: &quot;required name=search_term&quot;}
+            }
+          </script>
+        </b:includable>
+        <b:includable id='MigoMagAppLogo'>
+          <script type='application/ld+json'>
+            {
+            &quot;@context&quot;: &quot;https://schema.org&quot;,
+            &quot;@type&quot;: &quot;Organization&quot;,
+            &quot;name&quot;:&quot;<data:blog.title/>&quot;,
+            &quot;url&quot;: &quot;<data:blog.homepageUrl/>&quot;,
+            &quot;logo&quot;: &quot;رابط الشعار&quot;
+            }
+          </script>
+        </b:includable>
+      </b:defaultmarkup>
+    </b:defaultmarkups>
+    <b:skin version='1.3.0'><![CDATA[
+/*-----------------------------------------------
+Name                       : Migomag Free Blogger Template
+Version                    : 1.0.0
+Theme Published            : 28/6/2020
+Theme Updated              : 5/9/2020
+Designer                   : Mohamed Refaat
+Designer website URL       : https://mohamed24119.com
+Designer facebook URL      : https://www.facebook.com/mohamed24119
+Designer khamsat URL       : https://khamsat.com/user/mohamed.refat
+Designer talents Root URL  : https://www.talentsroot.com/ar/Mohamed24119
+Designer nafezly URL       : https://nafezly.com/u/mohamed24119
+Designer kafiil URL        : https://kafiil.com/user/mohamed24119
+Designer picalica URL      : https://www.picalica.com/u/mohamed24119/
+Facebook page url          : https://www.facebook.com/MigoMagSupport
+Template demo url          : https://migomagfree.blogspot.com/
+
+----------------------------------------------- */
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:0.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:0.35em 0.75em 0.625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:#ffffff}::-webkit-scrollbar-thumb{background:#16a3b8}::selection{background:#16a3b8;color:#ffffff}*{box-sizing:border-box}body{background:#f5f7f9;color:#444444;font-size:16px;line-height:normal;font-family:Tajawal}ol,ul{list-style:none;padding:0;margin:0}a{text-decoration:none;color:#0089ff}a:hover{color:#1381e0}.container{margin-right:auto;margin-left:auto}@media (max-width:575px){.container{max-width:98%}}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.adsbygoogle{margin:0 auto}html[dir="rtl"] .start,html[dir="ltr"] .end{float:right}html[dir="rtl"] .end,html[dir="ltr"] .start{float:left}.ltr{direction:ltr;text-align:left}.items-center,.items-between,.item-content-center{display:flex}.items-between{justify-content:space-between}.items-center{align-items:center}.ads,MigoMagAdsTopBottomNavbar{text-align:center;margin:30px 0}.navbar-site{height:64px;background:#ffffff;box-shadow:0 2px 3px rgb(0 0 0 / 32%);position:fixed;top:0;z-index:9;right:0;left:0}.navbar-site .container{height:100%}@media (min-width:992px){#open_menu{display:none}}.nav-icon{height:64px;line-height:64px!important;cursor:pointer;width:48px;color:#444444;text-align:center;font-size:20px}.nav-logo .nav-logo-link{width:58px;height:58px;overflow:hidden;border-radius:58px;margin:0 15px;display:flex;align-items:center;justify-content:center;box-shadow:2px 2px 4px rgb(0 0 0 / 0.35)}.nav-logo .nav-logo-link img{width:58px;height:58px;overflow:hidden}.nav-logo-link .nav-blog-title{display:none}@media (min-width:992px){#navbar-overlay{width:100%}}.navbar-site .nav li{display:inline-flex;position:relative}.navbar-site .nav li a{color:#444;font-size:13px;display:flex;align-items:center;justify-content:space-between;height:64px;padding:0 10px}.navbar-site .nav li a:hover{color:#16a3b8}.navbar-site .nav li a:before{content:"";border:1px solid #16a3b8;position:absolute;bottom:0;right:0;left:0;transform:scale(0);opacity:0;transition:all 0.5s ease-in-out}.navbar-site .nav li a.active:before{transform:scale(1);opacity:1}.navbar-site .nav li a.active{color:#16a3b8}.navbar-site .nav li a:hover:before{transform:scale(1);opacity:1}@media (max-width:991px){#navbar-overlay{position:fixed}#navbar-overlay.toggle{width:100%;height:100vh;background:rgb(0 0 0 / 0.35);right:0;top:0;bottom:0;left:0;z-index:9999}#nav{width:275px;height:100vh;background:#fff;box-shadow:-3px 0 3px rgb(0 0 0 / 33%);position:fixed;top:0;bottom:0;transition:all 0.5s ease-in-out;overflow:auto}html[dir="rtl"] #nav{right:-100%}html[dir="rtl"] #nav.toggle{right:0}html[dir="ltr"] #nav{left:-100%}html[dir="ltr"] #nav.toggle{left:0}.navbar-site .nav li{display:block}.navbar-site .nav li a{height:auto;padding:10px 20px;border-bottom:1px solid #f5f7f9;font-size:16px}#navbar-close{width:100%;height:100%}}.navFix{margin-top:calc(64px + 20px)}.main-section{overflow:hidden}.main-content.start{width:calc(100% - 320px - 10px);transition:all 0.5s ease-in-out}@media (max-width:991px){.main-content.start{width:100%}}.aside-site{width:320px;transition:all 0.5s ease-in-out}@media (max-width:991px){.aside-site{width:100%;display:initial;column-count:2;column-gap:15px}}@media (max-width:767px){.aside-site{column-count:1;column-gap:0}}.page-type-page .main-content{width:100%;float:none}.MigoMag-single{background:#fff;box-shadow:2px 1px 8px rgba(0,0,0,0.21);overflow:hidden;padding:15px}.MigoMag-single .article-post .post-title{margin:0;padding:10px 0;color:#16a3b8;font-size:28px}.MigoMag-single .meta,.MigoMag-single .meta a,.MigoMag-single .meta .icon{color:#777777;font-size:13px}html[dir="rtl"] .MigoMag-single .article-post .meta .icon{margin-left:3px}html[dir="ltr"] .MigoMag-single .article-post .meta .icon{margin-right:3px}.MigoMag-single #font-z,.MigoMag-single #font-o{background:#f5f7f9;padding:0 5px;border-radius:4px;cursor:pointer}.MigoMag-single .ads{margin:30px 0;text-align:center}.MigoMag-single .post-body{font-size:16px;color:#444444;overflow:hidden;border-bottom:1px dashed #f5f7f9;line-height:calc(16px * 2)}.MigoMag-single .post-body img{display:block;max-width:100%;margin:0 auto;box-shadow:3px 3px 4px rgb(0 0 0 / 25%);border-radius:4px}.post-body-content{overflow:hidden;text-align:justify}.post-body-content h2,.post-body-content h3,.post-body-content h4,.post-body-content h5,.post-body-content h6{padding-top:8px;padding-bottom:8px;color:#16a3b8}html[dir="rtl"] .post-body-content h2,html[dir="rtl"] .post-body-content h3,html[dir="rtl"] .post-body-content h4,html[dir="rtl"] .post-body-content h5,html[dir="rtl"] .post-body-content h6{border-right:5px solid #16a3b8;padding-right:15px}html[dir="ltr"] .post-body-content h2,html[dir="ltr"] .post-body-content h3,html[dir="ltr"] .post-body-content h4,html[dir="ltr"] .post-body-content h5,html[dir="ltr"] .post-body-content h6{border-left:5px solid #16a3b8;padding-right:15px}.MigoMag-single .post-labels{margin:1rem 0;padding:0 1rem;overflow:hidden}.MigoMag-single .post-labels .post-labels-item{color:#444;display:inline-block;padding:0.3rem 0.5rem;border-radius:4px;border:1px solid #16a3b8;overflow:hidden}.MigoMag-single .post-labels .post-labels-item:hover{background:#16a3b8;color:#f5f7f9}.postPagination{display:flex;overflow:hidden;margin:1rem 0;border-radius:4px}.postPagination a{width:100%;background:#16a3b8;color:#f5f7f9;padding:14px;text-align:center}.postPagination a:hover{background:#1393a7;color:#ffffff}.MigoMag-index{overflow:hidden}.articles{overflow:hidden}.articles .article-posts{position:relative;padding:0 5px;overflow:hidden;margin-bottom:15px}.articles .article-posts .box{background:#ffffff;display:block;border:1px solid #e2e2e2;overflow:hidden}.articles .article-posts .thumbnail{display:block;overflow:hidden;position:relative}.articles .article-posts .thumbnail img{width:100%;height:100%;transition:all 0.3s ease-in-out}.articles .article-posts:hover .thumbnail img{transform:scale(1.3)}.articles .article-posts .thumbnail img[alt]{color:#444;font-size:11px}.articles .article-posts .box-content{padding:15px;overflow:hidden}.articles .article-posts .box-content .post-headding{margin:0 0 10px 0}.articles .article-posts .box-content .post-headding .link{margin:0;display:block;font-size:18px;color:#444444}.articles .article-posts .box-content .description{font-size:13px;color:#777777}.meta{display:flex;column-gap:10px}.articles .meta,.articles .meta a{font-size:12px;color:#777}html[dir="rtl"] .articles .meta i{margin-left:5px}html[dir="ltr"] .articles .meta i{margin-right:5px}.articles .article-posts{margin-bottom:15px}html[dir="rtl"] .list .articles .article-posts .thumbnail,html[dir="ltr"] .list .articles .article-posts .box-content{float:right}html[dir="ltr"] .list .articles .article-posts .thumbnail,html[dir="rtl"] .list .articles .article-posts .box-content{float:left}@media (max-width:767px){.featured.list .articles .article-posts .thumbnail{width:100%;max-height:350px;float:none}.featured.list .articles .article-posts .box-content{width:100%;float:none}}@media (min-width:768px){.featured.list .articles .article-posts .thumbnail{width:275px;height:195px}.featured.list .articles .article-posts .box-content{width:calc(100% - 275px)}}@media (min-width:1200px){.featured.list .articles .article-posts .thumbnail{width:320px;height:230px}.featured.list .articles .article-posts .box-content{width:calc(100% - 320px)}}.grid-1 .articles .article-posts,.list .articles .article-posts{float:none}.sidebar > .widget{background:#ffffff;margin-bottom:15px;border:1px solid #dcddde;overflow:hidden}.sidebar > .widget > .title{background:#16a3b8;color:#f5f7f9;margin:0 0 1px 0;padding:0.5rem 1.25rem;position:relative}.sidebar .widget.Label .widget-content{padding:0}.sidebar ul{overflow:auto;max-height:200px}.sidebar ul li{position:relative;overflow:hidden}.sidebar ul li a{display:block;color:#444444;padding:0.8rem 1rem;position:relative;border-bottom:1px solid #f5f7f9}.sidebar ul li a:hover,.sidebar ul li a.active{color:#16a3b8}.sidebar ul li span{width:30px;height:30px;text-align:center;line-height:30px;font-size:12px;border-radius:2px;position:absolute}html[dir="rtl"] .sidebar > .widget.Label .widget-content li span{left:0}html[dir="ltr"] .sidebar > .widget.Label .widget-content li span{right:0}.sidebar > .widget.Image{border:0;padding:0;background:transparent!important;text-align:center}.PopularPosts .widget-content{padding:0.5rem 0}.PopularPosts ol li{margin-bottom:0.3rem;counter-increment:my-awesome-counter;position:relative;overflow:hidden;border-bottom:1px solid #f5f7f9;transition:all 0.3s ease-in-out}html[dir="rtl"] .PopularPosts ol li{padding:0 20px 5px 0}html[dir="ltr"] .PopularPosts ol li{padding:0 0 5px 20px}.PopularPosts ol li:last-child{margin-bottom:0;padding-bottom:0!important}.PopularPosts ol li:before{content:counter(my-awesome-counter);position:absolute;width:30px;background:#16a3b8;text-align:center;color:#f5f7f9;height:30px;top:-45px;bottom:0;margin:auto;justify-items:center;line-height:30px;border-radius:50%;border:3px solid #fff;z-index:1}html[dir="rtl"] .PopularPosts ol li:before{right:0}html[dir="ltr"] .PopularPosts ol li:before{left:0}.PopularPosts ol li:hover:before{transform:rotate(360deg);transition:all 0.3s ease-in-out}.PopularPosts ol li:hover{border-bottom-color:#16a3b8}.PopularPosts .thumbnail{width:72px;height:72px;overflow:hidden}.PopularPosts .thumbnail img{width:100%;height:100%}html[dir="rtl"] .PopularPosts .thumbnail,html[dir="ltr"] .PopularPosts ol li .box-content{float:right}html[dir="ltr"] .PopularPosts .thumbnail,html[dir="rtl"] .PopularPosts ol li .box-content{float:left}.PopularPosts ol li .box-content{width:calc(100% - 72px);padding:5px}.PopularPosts ol li .box-content .title{font-size:13px;background:transparent;color:#444;display:block}.PopularPosts ol li:hover .box-content .title{color:#16a3b8}.PopularPosts .popular .meta{color:#444;font-size:11px}.widget select{width:100%;border:1px solid #eee;border-radius:4px;padding:0.5rem 0.75rem}#FeaturedPost1{border:0}.MigoMag-featured-Post .article-posts{padding:0!important;margin:0!important}.MigoMag-featured-Post .thumbnail{height:auto!important;position:relative}.MigoMag-featured-Post .thumbnail:before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;content:"\f005";font-family:"Font Awesome 5 Free";font-weight:900;width:35px;height:35px;line-height:35px;background:#16a3b8;text-align:center;position:absolute;top:5px;color:#f5f7f9;z-index:1;border-radius:50%}html[dir="rtl"] .MigoMag-featured-Post .thumbnail:before{right:5px}html[dir="ltr"] .MigoMag-featured-Post .thumbnail:before{left:5px}.MigoMag-featured-Post .post-headding{margin:0!important}.MigoMag-featured-Post .post-headding .title{color:#16a3b8}.cloud-label-widget-content{padding:0.5rem!important;overflow:hidden}.cloud-label-widget-content .label-size{position:relative;display:inline-block;overflow:hidden}.cloud-label-widget-content .label-size .label-name{background:#16a3b8;color:#f5f7f9;font-size:14px;display:block;padding:6px 6px;border-radius:4px;position:relative;transition:all 0.3s ease-out}.cloud-label-widget-content .label-size .label-name:hover,.cloud-label-widget-content .label-size .label-name.active{background:#108192;color:#ffffff}.cloud-label-widget-content .label-size .label-name .label-count{font-weight:bold}html[dir="rtl"] .cloud-label-widget-content .label-size .label-name .label-count{margin-right:0.5rem}html[dir="ltr"] .cloud-label-widget-content .label-size .label-name .label-count{margin-left:0.5rem}.label-name:before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;font-family:"Font Awesome 5 free";font-weight:900;content:"\f07b"}.label-name:hover:before,.label-name.active:before{content:"\f07c"}html[dir="rtl"] .label-name:before{margin-left:5px}html[dir="ltr"] .label-name:before{margin-right:5px}.footer-site{background:#ffffff;border-top:4px solid #16a3b8;position:relative;margin-top:100px}.footer-site .blog-info{padding:4.5rem 1.25rem 1.25rem;overflow:hidden;text-align:center}.footer-site .blog-logo{width:150px;height:150px;background:#ffffff;overflow:hidden;border-radius:150px;position:absolute;top:-90px;right:0;left:0;margin:0 auto;box-shadow:2px 2px 3px rgb(0 0 0 / 19%)}.footer-site .blog-logo a{display:flex;align-items:center;justify-content:center;height:100%}.footer-site .blog-logo img{width:150px;height:150px}.footer-site .blog-logo .blog-title{display:none}.footer-site .blog-title{font-size:26px;color:#16a3b8;margin-bottom:1.5rem}.footer-site .blog-des{font-size:16px;color:#444444}.footer-site .add-widget-footer .PageList li{display:inline-block;overflow:hidden}.footer-site .add-widget-footer .PageList li a{padding:0 0.5rem;font-size:14px;color:#0089ff}.footer-site .add-widget-footer .PageList li a:hover{color:#1381e0}@media (max-width:479px){.footer-site .add-widget-footer .PageList li{display:block}.footer-site .add-widget-footer .PageList li a{padding:0.5rem;display:block}}.footer-site .foot{background:#f5f7f9;overflow:hidden;padding:0.3rem;font-size:14px;color:#444444}.footer-site .foot a{color:#444444}.footer-site .foot .container{overflow:hidden;display:flex;align-items:center;height:35px;justify-content:space-between}.pgae-error{position:relative;background:#16a3b8;padding:110px 1.25rem 1.25rem;margin-top:110px;color:#f5f7f9;border-radius:4px;text-align:center;font-size:22px}.pgae-error .icon-error{width:180px;height:180px;background:#ffffff;line-height:180px;text-align:center;font-size:100px;border-radius:50%;position:absolute;top:-90px;right:0;left:0;margin:0 auto;color:#16a3b8;box-shadow:2px 3px 4px 1px rgba(0,0,0,0.36)}#form-search{background:#ffffff;height:64px;position:fixed;top:-100%;right:0;left:0;opacity:0;transition:all 0.5s ease-in-out;z-index:9999}#form-search .container{height:100%}.form-search .wrapper-input{height:100%;overflow:hidden;display:flex;align-items:center}.wrapper-input .input-search{width:100%;height:100%;border:0;outline:none;background:#ffffff;padding:0 15px}.form-search #close-search{width:44px;text-align:center;cursor:pointer;font-size:24px;color:#444}#form-search.toggle{top:0;opacity:1}.wrapper-input .input-search::placeholder{color:#444444}#open-share .icon{z-index:8}#share-link,#close-share{position:fixed;display:flex;align-items:center;justify-content:center}#share-link{top:-100%}#share-link.toggle,#close-share.toggle{top:0;right:0;bottom:0;left:0}#share-link.toggle{background:rgb(0 0 0 / 0.35);z-index:9999}.social-link{margin:2rem 0}.share-link{overflow:hidden;padding:15px;z-index:9}.social-link li,.share-link li{display:inline-block;overflow:hidden;box-shadow:0 2px 3px 0 rgba(0,0,0,0.25);border-radius:50%;transition:all 0.5s ease-in-out}html[dir="rtl"] .social-link li,html[dir="rtl"] .share-link li{margin-left:5px}html[dir="ltr"] .social-link li,html[dir="ltr"] .share-link li{margin-right:5px}.social-link li:hover,.share-link li:hover,#open-share .icon:hover{transform:rotate3d(0,1,1,360deg)}.social-link li a:before,.share-link li a .icon,#open-share .icon{width:44px;height:44px;line-height:44px;color:#f5f7f9;font-size:22px;text-align:center}#open-share .icon{background:#16a3b8;border-radius:50%;cursor:pointer;position:fixed;bottom:30px;transition:all 0.5s ease-in-out}html[dir="rtl"] #open-share .icon{left:30px}html[dir="ltr"] #open-share .icon{right:30px}@media (max-width:991px){}.social-link .text-none{display:none}.social-link li a:before{color:#f5f7f9;font-size:22px;text-align:center;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;font-family:"Font Awesome 5 Brands"}.social-link li.bg-facebook a:before{content:"\f39e"}.social-link li.bg-messenger a:before{content:"\f39f"}.social-link li.bg-whatsapp a:before{content:"\f232"}.social-link li.bg-telegram a:before{content:"\f3fe"}.social-link li.bg-twitter a:before{content:"\f099"}.social-link li.bg-facebook a:before{content:"\f39e"}.social-link li.bg-youtube a:before{content:"\f167"}.social-link li.bg-linkedin a:before{content:"\f0e1"}.social-link li.bg-snapchat a:before{content:"\f2ac"}.social-link li.bg-instagram a:before{content:"\f16d"}.social-link li.bg-github a:before{content:"\f09b"}.social-link li.bg-flickr a:before{content:"\f16e"}.social-link li.bg-pinterest a:before{content:"\f231"}.social-link li.bg-vimeo a:before{content:"\f27d"}.bg-snapchat a:before{color:#444!important}.bg-facebook{background:#1877f2}.bg-messenger{background:#0077ff}.bg-whatsapp{background:#00e676}.bg-twitter{background:#1da1f2}.bg-telegram{background:#2098ca}.bg-youtube{background:#ff0000}.bg-instagram{background:#d6249f;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)!important}.bg-pinterest{background:#e60023}.bg-linkedin{background:#0073b0}.bg-snapchat{background:#ff0}.bg-github{background:#24292e}.bg-vimeo{background:#00adf1}.bg-snapchat .icon{color:#444!important}.bg-flickr{background:#0063dc}.bg-envelope{background:#127bd6}.number li{counter-increment:my-awesome-counter;position:relative;overflow:hidden;border-bottom:1px solid #f5f7f9}html[dir="ltr"].number li{padding:0.5rem 0.5rem 0.5rem 2.5rem}html[dir="rtl"] .number li{padding:0.5rem 2.5rem 0.5rem 0.5rem}.number li:before{content:counter(my-awesome-counter);position:absolute;width:30px;background:#16a3b8;text-align:center;color:#f5f7f9;height:30px;top:0;bottom:0;margin:auto;justify-items:center;line-height:30px;border-radius:50%}.number li:hover:before{transform:rotate(360deg);transition:all 0.3s ease-in-out}html[dir="rtl"] .number li:before{right:0}html[dir="ltr"] .number li:before{left:0}.number li a{padding:0.3rem;display:block}.title-center{position:relative;margin:40px 0;border-bottom:1px solid #16a3b8;display:flex;align-items:center;justify-content:center}.title-center span{background:#16a3b8;padding:15px;position:absolute;color:#f5f7f9;border-radius:4px;box-shadow:1px 2px 3px 0 rgb(0 0 0 / 45%)}.table-responsive{overflow-y:hidden}.table{width:100%;border-collapse:collapse;text-align:center}.table tr,.table th,.table td{border:1px solid #dcddde}.sidebar #ContactForm1{display:none;opacity:0}.contact-form{overflow:hidden;padding:0}.contact-form .row{overflow:hidden;margin-bottom:15px}.contact-form .row .col{width:50%;float:right;padding:0 5px}.contact-form input{width:100%;border:1px solid #e9e9e9;padding:10px 15px;border-radius:4px}.contact-form textarea{border:1px solid #e9e9e9;width:100%;min-height:200px;padding:15px}.contact-form .btn{border:0;background:#16a3b8;color:#f5f7f9;padding:15px 30px;margin:0 auto 15px auto;display:block;border-radius:4px;cursor:pointer;outline-color:#117c8c}.contact-form .btn:hover{background:#117c8c}#comments{background:#f5f7f9;position:relative;border:1px dashed #f5f7f9}#comments .title{background:#16a3b8;color:#ffffff;padding:10px 15px;margin:0;border-top-right-radius:4px;border-top-left-radius:4px}#comments .comments-content{padding:20px 5px 5px 5px}#comments .comments-content ol > li{margin-bottom:30px;position:relative;counter-increment:my-awesome-counter;border:1px dashed #e2e2e2}#comments .comments-content ol > li:before{content:counter(my-awesome-counter);position:absolute;width:30px;background:#16a3b8;text-align:center;color:#f5f7f9;height:30px;top:-15px;justify-items:center;line-height:30px;border-radius:50%}html[dir="rtl"] #comments .comments-content ol > li:before{right:-14px}html[dir="ltr"] #comments .comments-content ol > li:before{left:-14px}#comments .comment .comment-block{background:#16a3b8;margin-bottom:15px;padding:5px}#comments .avatar-image-container{width:35px;height:35px;margin:10px}html[dir="rtl"] #comments .avatar-image-container{float:right}html[dir="ltr"] #comments .avatar-image-container{float:left}#comments .comments-content ol > li .comment-header{background:#f5f7f9;border-bottom:1px dashed #d8d6d6;padding:10px 15px}#comments .user,#comments .user a,#comments .datetime a{font-size:14px;color:#444444;font-style:initial}html[dir="rtl"] #comments .datetime{float:left}html[dir="ltr"] #comments .datetime{float:right}#comments .comments-content .comment-content{background:#ffffff;color:#666666;padding:15px;font-size:16px;line-height:32px;margin:0;text-align:justify}.comment-actions{background:#f5f7f9;display:block;padding:5px 10px;border-bottom-right-radius:4px;border-bottom-left-radius:4px;border-top:1px dashed #e2e2e2}.comment-actions .comment-reply,.comment-actions .item-control a,.comment-reply{background:#16a3b8;color:#f5f7f9;display:inline-block;padding:5px 15px;border-radius:4px}html[dir="rtl"] .comment-actions .comment-reply,html[dir="rtl"] .comment-actions .item-control a,html[dir="rtl"] .comment-reply{margin-left:4px}html[dir="ltr"] .comment-actions .comment-reply,html[dir="ltr"] .comment-actions .item-control a,html[dir="ltr"] .comment-reply{margin-right:4px}.comment-actions .comment-reply:hover,.comment-actions .item-control a:hover,.comment-reply:hover{background:#108192;color:#ffffff}.comment-replies{padding:5px;margin-top:-10px}html[dir="rtl"] .comment-replies{margin-right:20px}html[dir="ltr"] .comment-replies{margin-left:20px}.comment-reply:before,.item-control a:before{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;font-family:"Font Awesome 5 Free";font-weight:900;vertical-align:middle}.comment-reply:before{content:"\f3e5"}.item-control a:before{content:"\f2ed"}html[dir="rtl"] .comment-reply:before,html[dir="rtl"] .item-control a:before{margin-left:5px}html[dir="ltr"] .comment-reply:before,html[dir="ltr"] .item-control a:before{margin-right:5px}.comment-replies .comment-thread{display:flex;flex-direction:column}.comment-replies .comment-thread .thread-toggle{display:none}#comments #top-ce{margin-top:15px}.inline-ad{margin:15px 0}#related-posts{margin:30px 0}.cat-title{position:relative;padding:10px 0;border-bottom:1px solid #16a3b8;margin-bottom:14px}.cat-title span{background:#16a3b8;color:#f5f7f9;padding:10px 24px;position:relative}html[dir="rtl"] .cat-title span{border-top-right-radius:8px}html[dir="ltr"] .cat-title span{border-top-left-radius:8px}.cat-title span:before{content:"";border:2px solid white;position:absolute;top:-1px;bottom:0;height:100%}html[dir="rtl"] .cat-title span:before{left:5px;transform:rotate(-21deg)}html[dir="ltr"] .cat-title span:before{right:5px;transform:rotate(21deg)}.comment-form{padding:5px}.text-none{display:none}
+]]></b:skin>
+    <b:if cond='data:view.isLayoutMode'>
+      <b:template-skin><![CDATA[
+#layout{max-width:100%;padding:10px!important;background:#f5f7f9!important;border:1px dashed #b4b4b4!important}
+#layout div.section{border:0!important;background:#108192!important;color:#f5f7f9;margin-bottom:30px!important;border-radius:10px;box-shadow:2px 5px 7px rgb(0 0 0 / 33%)}
+#layout div.section h4{text-align:start}#layout .layout-widget-description{display:none}#layout .main-section{background:#116471;padding:15px 5px;border-radius:10px;overflow:hidden;display:flex;margin-bottom:30px}#layout .main-content,#layout .aside-site{width:100%}.add_widget a{color:#f5f7f9!important;text-decoration:none!important}#layout .navbar-site .container{background:#116471;padding:5px;overflow:hidden;display:inherit}#layout .navbar-site #nav-logo{width:150px}#layout .navbar-site #navbar-overlay{width:calc(100% - 200px)}html[dir="rtl"] #layout .navbar-site #nav-logo,html[dir="ltr"] #layout .navbar-site #navbar-overlay{float:right}html[dir="ltr"] #layout .navbar-site #nav-logo,html[dir="rtl"] #layout .navbar-site #navbar-overlay{float:left}
+]]></b:template-skin>
+    </b:if>
+    <link href='https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&amp;display=swap' rel='stylesheet'/>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css' rel='stylesheet'/>
+    
+  </head>
+  <body>
+    <b:attr cond='data:view.isHomepage' name='class' value='page-type-index page-type-home'/>
+    <b:attr cond='data:view.isPost' name='class' value='page-type-single page-type-post'/>
+    <b:attr cond='data:view.isPage' name='class' value='page-type-single page-type-page'/>
+    <b:attr cond='data:view.isLabelSearch' name='class' value='page-type-index page-type-lable-search'/>
+    <b:attr cond='data:view.isSearch' name='class' value='page-type-index page-type-search'/>
+    <b:attr cond='data:view.isArchive' name='class' value='page-type-index page-type-archive'/>
+    <b:attr cond='data:view.isError' name='class' value='page-type-Error'/>
+    
+
+    
+    <b:section class='none' hidden='hidden' id='options' maxwidgets='1' showaddelement='no' title='خيارات'>
+      <b:widget id='HTML2' locked='true' title='شاشة كاملة' type='HTML' version='2' visible='false'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>الحد الأقصىى لعرض المحتوى على الشاشة بحجم 1200 بكسل. إذا كنت تريد عرض الشاشة كاملة يرجي تحديد المربع بالأعلى الموجود أسفل كلمة مرئي. ولاستعادة الوضع الافتراضي يرجي إلغاء تحديد المربع بالأعلى الموجود أسفل كلمة مرئي. ملحوظة :- في حالة تفعيل وضع ملئ الشاشة قد يعرض المحتوى بشكل غير جيد في الشاشات الكبيرة جدا.</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'> 
+          <style>/*<![CDATA[*/
+.container { max-width: 100% !important; }
+/*]]>*/</style> 
+        </b:includable>
+      </b:widget>
+      <b:widget id='HTML3' locked='true' title='الغاء تثبيت القائمة في الأعلى' type='HTML' version='2' visible='false'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>القائمة الرئيسية ثابتة أعلى الشاشة بشكل افتراضي. لإلغاء تثبيت القائمة الرئيسية يرجي تحديد المربع بالأعلى الموجود أسفل كلمة مرئي. ولتثبيت القائمة الرئيسية مرة أخرى أعلى الشاشة يرجي إلغاء تحديد المربع
+            بالأعلى الموجود أسفل كلمة مرئي.</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+          <style>/*<![CDATA[*/.navbar-site {position: static;}.navFix {margin-top: 0;}/*]]>*/
+          </style> </b:includable>
+      </b:widget>
+      <b:widget id='HTML7' locked='true' title='منع تحديد النص' type='HTML' version='2' visible='false'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>لتفعيل خاصية منع تحديد نصوص المحتوى يرجي تحديد المربع بالأعلى الموجود أسفل كلمة مرئي. لإلغاء تفعيل خاصية منع تحديد نصوص المحتوى يرجي إلغاء تحديد المربع بالأعلى الموجود أسفل كلمة مرئي</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'> <b:if cond='data:view.isSingleItem'> 
+          <style>/*<![CDATA[*/.post-body-content {user-select: none;}/*]]>*/
+          </style> </b:if> </b:includable>
+      </b:widget>
+    </b:section>    
+    <b:defaultmarkups>
+      <b:defaultmarkup type='Common'>
+        <b:includable id='MigoMagDefaultImage'>
+          <img class='lazy' data-src='https://1.bp.blogspot.com/-igV9vkZfPhQ/X0KXOPzY91I/AAAAAAAADCI/fNMR6mXIHM04KHVkqvN9MsKbprYh2LSiACLcBGAsYHQ/s640/11.png' expr:alt='data:post.title'/>
+        </b:includable>
+        <b:includable id='MigoMagSearch'>
+          <form class='form-search' expr:action='data:blog.searchUrl' id='form-search'>
+            <div class='container'>
+              <div class='wrapper-input'>
+                <meta itemprop='target'/>
+                <input class='input-search' name='q' placeholder='اكتب ما تبحث عنه هنا ...' type='text'/>
+                <i class='fa fa-times' id='close-search'/>
+              </div>
+            </div>
+          </form> 
+        </b:includable>
+        <b:includable id='MigoMagPageError'>
+          <b:if cond='data:view.isError'>
+            <div class='pgae-error'>
+              <div class='icon-error'>
+                <i class='fas fa-exclamation-triangle'/>
+              </div>
+              <div class='des-error'>
+                عفوا الصفحة التي تبحث عنها غير موجودة &#1548; قد تكون اتبعت رابط خاطئ أو منتهي الصلاحية &#1548; أو ربما تم حذف الصفحة &#1548; أو لم يتم إنشاء الصفحة بعد &#1548; أو كلمة البحث غير متطابقة
+              </div>
+            </div>
+          </b:if>
+        </b:includable>
+        <b:includable id='MigoMagAdsTopBody'>
+          <div class='ads'>
+            <b:comment>احذف هذا السطر وضع مكانه كود الإعلان ليتم اظهاره في أول الموضوع</b:comment>
+          </div>
+        </b:includable>
+        <b:includable id='MigoMagAdsBottomBody'>
+          <div class='ads'>
+            <b:comment>احذف هذا السطر وضع مكانه كود الإعلان ليتم اظهاره في اخر الموضوع</b:comment>
+          </div>
+        </b:includable>
+        <b:includable id='MigoMagAdsBeforePagination'>
+          <div class='ads'>
+             <b:comment>احذف هذا السطر وضع مكانه كود إعلان ليتم اظهاره قبل أزرار التنقل بين المقالات</b:comment>
+          </div>
+        </b:includable>
+        <b:includable id='MigoMagAdsAfterPagination'>
+          <div class='ads'>
+            <b:comment>احذف هذا السطر وضع مكانه كود إعلان ليتم اظهاره بعد أزرار التنقل بين المقالات</b:comment>
+          </div>
+        </b:includable>
+      </b:defaultmarkup>
+    </b:defaultmarkups>
+
+    <nav class='navbar-site'> 
+      <div class='container items-center items-between'> 
+        <span class='nav-icon fas fa-bars' id='open_menu'/>
+        <b:section class='nav-logo' id='nav-logo' maxwidgets='1' name='الشعار' showaddelement='yes'>
+          <b:widget id='Image1' locked='true' title='الشعار' type='Image' version='2' visible='true'>
+            <b:widget-settings>
+              <b:widget-setting name='displayUrl'>https://3.bp.blogspot.com/-yliUzmavyUM/Xw9lnlxzCGI/AAAAAAAAC5Q/-MTlTZjRxpYNVsF6m0Qv06tDnp2MSiOfwCK4BGAYYCw/s320/3333.png</b:widget-setting>
+              <b:widget-setting name='displayHeight'>320</b:widget-setting>
+              <b:widget-setting name='sectionWidth'>632</b:widget-setting>
+              <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+              <b:widget-setting name='displayWidth'>315</b:widget-setting>
+              <b:widget-setting name='link'/>
+              <b:widget-setting name='caption'/>
+            </b:widget-settings>
+            <b:includable id='main'>
+              <a class='nav-logo-link' expr:href='data:blog.homepageUrl'>
+                <img expr:alt='data:blog.title' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl'/>
+                <b:if cond='data:view.isSingleItem'> 
+                  <span class='nav-blog-title'>
+                    <data:blog.title/>
+                  </span>
+                  <b:else/>
+                  <h1 class='nav-blog-title'>
+                    <data:blog.title/>
+                  </h1>
+                </b:if> 
+              </a> 
+            </b:includable>
+            <b:includable id='content'/>
+          </b:widget>
+        </b:section> 
+
+        <div id='navbar-overlay'> <b:section class='none' id='widget-navbar' maxwidgets='1' name='القائمة الرئيسية' showaddelement='yes'>
+   <b:widget id='Label3' locked='true' title='التسميات' type='Label' version='2' visible='true'>
+     <b:widget-settings>
+       <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+       <b:widget-setting name='display'>LIST</b:widget-setting>
+       <b:widget-setting name='selectedLabelsList'>أخبار,بنوك,تكنولوجيا,حوادث,رياضة,سيارات,فن,فيروس كورونا</b:widget-setting>
+       <b:widget-setting name='showType'>USER_SELECTED</b:widget-setting>
+       <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+     </b:widget-settings>
+     <b:includable id='main' var='this'> <b:include name='content'/> </b:includable>
+     <b:includable id='cloud'/>
+     <b:includable id='content'> 
+              <ul class='nav' id='nav' itemscope='itemscope' itemtype='http://www.schema.org/SiteNavigationElement'> 
+                <li itemprop='name'> <a class='label-name' expr:href='data:blog.url' itemprop='url'> 
+
+                  <span>الصفحة الرئيسية
+                  </span> </a> </li> <b:loop values='data:labels' var='label'> 
+                <li itemprop='name'> <a class='label-name' expr:href='data:label.url' itemprop='url'> <b:if cond='data:view.search.label == data:label.name'> <b:class name='active'/> </b:if> 
+
+                  <span><data:label.name/>
+                  </span> <b:if cond='data:this.showFreqNumbers'> 
+
+                  <span class='label-count'><data:label.count/>
+                  </span> </b:if> </a> </li> </b:loop> 
+              </ul> </b:includable>
+     <b:includable id='list'/>
+   </b:widget>
+ </b:section> 
+
+          <div id='navbar-close'/> 
+        </div> 
+
+        <span class='nav-icon fas fa-search' id='open-search'/> 
+      </div>
+    </nav>
+    <div class='navFix'/>
+    <div class='container' style='margin-top:30px;margin-bottom:30px'>
+      <b:section id='MigoMagAdsTopBottomNavbar' maxwidgets='1' name='مساحة إعلانية بعد القائمة الرئيسية' showaddelement='yes'>
+        <b:widget id='HTML5' locked='true' title='مساحة إعلانية بعد القائمة الرئيسية' type='HTML' version='2' visible='false'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>ضع كود الإعلان هنا ولا تنسى تحديد المربع الموجود أسفل كلمة مرئي ثم اضغط حفظ</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'> 
+            <div class='widget-content'> 
+              <data:content/> 
+            </div> 
+          </b:includable>
+        </b:widget>
+      </b:section>
+    </div>
+    <div class='container'>
+      <div class='main-section'>
+        <main class='main-content start'>
+          <div>
+            <b:if cond='!data:view.isError'>
+              <b:section class='main' id='main' maxwidgets='3' name='المحتوى' showaddelement='yes'>
+                <b:widget id='Blog1' locked='true' title='رسائل المدونة الإلكترونية' type='Blog' version='2' visible='true'>
+                  <b:widget-settings>
+                    <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+                    <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                    <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+                    <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+                    <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+                    <b:widget-setting name='showAuthor'>true</b:widget-setting>
+                    <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
+                    <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+                    <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+                    <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                    <b:widget-setting name='timestampLabel'/>
+                    <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+                    <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                    <b:widget-setting name='showLabels'>true</b:widget-setting>
+                    <b:widget-setting name='showLocation'>false</b:widget-setting>
+                    <b:widget-setting name='postLabelsLabel'/>
+                    <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+                    <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+                    <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+                    <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+                    <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+                    <b:widget-setting name='showReactions'>false</b:widget-setting>
+                  </b:widget-settings>
+                  <b:includable id='main' var='this'>
+                    <b:if cond='!data:view.isSingleItem'>
+                      <div>
+                        <b:attr cond='data:view.isHomepage' name='class' value='MigoMag-index MigoMag-home-page'/>
+                        <b:attr cond='data:view.isLabelSearch' name='class' value='MigoMag-index MigoMag-label-search'/>
+                        <b:attr cond='data:view.isSearch' name='class' value='MigoMag-index MigoMag-search'/>
+                        <b:attr cond='data:view.isArchive' name='class' value='MigoMag-index MigoMag-archive'/>
+                        <b:if cond='data:numPosts != 0'>
+                            <div class='featured grid list'>
+                              <div class='articles'>
+                                <b:loop index='i' values='data:posts' var='post'>
+                                  <article class='article-posts start' expr:id='&quot;post-id-&quot; + data:post.id'>
+                                    <b:include data='post' name='postMeta'/>
+                                    <div class='box'>
+                                      <b:if cond='data:post.featuredImage'>
+                                        <a class='thumbnail' expr:href='data:post.url'>
+                                          <img class='lazy' expr:alt='data:post.title' expr:data-src='data:post.featuredImage'/>
+                                        </a>
+                                        <b:else/>
+                                        <a class='thumbnail' expr:href='data:post.url'>
+                                          <b:include name='MigoMagDefaultImage'/>
+                                        </a>
+                                      </b:if>
+                                      <div class='box-content'>
+                                        <header class='article-header'>
+                                          <h2 class='post-headding'>
+                                            <a class='link' expr:href='data:post.url'>
+                                              <data:post.title/>
+                                            </a>
+                                          </h2>
+                                        </header>
+                                          <p class='description'>
+                                            <b:include name='postBodySnippet'/>
+                                          </p>
+                                        <footer class='article-footer'>
+                                          <div class='meta'>
+                                            <span class='meta-item'>
+                                              <i class='icon far fa-calendar-alt'/>
+                                              <time class='time' expr:datetime='data:post.date.iso8601' expr:title='data:post.date format &quot;dd MM y&quot;'>
+                                                <b:eval expr='data:post.date format &quot;dd MMM y&quot;'/>
+                                              </time>
+                                            </span>
+                                            <span class='meta-item'>
+                                              <a class='label' expr:href='data:post.labels[0].url'>
+                                                <b:eval expr='data:post.labels[0].name'/>
+                                              </a>
+                                            </span>
+                                          </div>
+                                        </footer>
+                                      </div>
+                                    </div>
+                                  </article>
+                                </b:loop>
+</div>
+                              <b:include name='MigoMagAdsBeforePagination'/>
+                              <b:include cond='data:view.isMultipleItems' name='postPagination'/>
+                              <b:include name='MigoMagAdsAfterPagination'/>
+                            </div>
+                          <b:else/>
+                          <div class='num-posts-empty'>
+                            <div class='title-center'>
+                              <span>لا يوجد مشاركات</span>
+                            </div>
+                          </div>
+                        </b:if>
+                      </div>
+                    </b:if>
+                    <b:if cond='data:view.isSingleItem'>
+                      <div>
+                        <b:attr cond='data:view.isPost and data:view.isSingleItem' name='class' value='MigoMag-single MigoMag-post'/>
+                        <b:attr cond='data:view.isPage and data:view.isSingleItem' name='class' value='MigoMag-single MigoMag-page'/>
+                        <b:loop index='i' values='data:posts' var='post'>
+                          <article class='article-post' expr:name='data:post.id'>
+                            <b:include data='post' name='postMeta'/>
+                            <hedaer class='header-article-post'>
+                              <h1 class='post-title'>
+                                <data:post.title/>
+                              </h1>
+                              <b:if cond='!data:view.isPage'>
+                                <div class='meta'>
+                                  <span class='meta-item' title='تاريخ النشر'>
+                                    <span class='icon far fa-calendar-alt'/>
+                                    <b:include data='post' name='MigoMagPostTimestamp'/>
+                                  </span>
+                                  <span class='meta-item' title='وقت النشر'>
+                                    <span class='icon far fa-clock'/>
+                                    <b:eval expr='data:post.date format &quot;h:m:s&quot;'/>
+                                  </span>
+                                </div>
+                              </b:if>
+                            </hedaer>
+
+                            <b:if cond='!data:view.isPage'>
+                              <div class='meta'>
+                                <span class='meta-item'>
+                                  <span class='icon fars fa-user'/> <data:post.author.name/>
+                                </span>
+                                <span class='meta-item'><b:include name='postCommentsLink'/>
+                                </span>
+                              </div>
+                            </b:if>
+                            <div class='post-body' expr:id='&quot;post-body-&quot; + data:post.id'>
+                              <b:include name='MigoMagAdsTopBody'/>
+                              <div class='post-body-content'>
+                                <data:post.body/>
+                              </div>
+                              <b:include name='MigoMagAdsBottomBody'/>
+                            </div>
+                            <footer class='article-post-footer'>
+                              <div class='post-labels'>
+                                <b:loop index='i' values='data:post.labels' var='label'>
+                                  <a class='post-labels-item' expr:href='data:label.url' rel='tag'>
+                                    <data:label.name/>
+                                  </a>
+                                </b:loop>
+                              </div>
+                              <!-- Show ad inside post container, after comments, if single item. -->
+                              <b:include cond='data:view.isSingleItem and data:post.includeAd' data='post' name='inlineAd'/>
+    
+                              <!-- Comments -->
+                              <b:include cond='data:view.isSingleItem' data='post' name='commentPicker'/>
+                            </footer>
+                          </article>
+
+                          <!-- Show ad outside post container (between posts) for feed pages. -->
+                          <b:include cond='data:view.isSingleItem and data:post.includeAd' data='post' name='inlineAd'/>
+                        </b:loop>
+                        <b:include cond='data:view.isSingleItem' name='postPagination'/>
+
+                      </div>
+                    </b:if>
+                  </b:includable>
+                  <b:includable id='MigoMagPostTimestamp'>
+                    <b:if cond='data:post.url'>
+                      <meta expr:content='data:post.url.canonical'/>
+                      <time class='time' expr:datetime='data:post.date.iso8601'>
+                        <b:eval expr='data:post.date format &quot;dd MMM y&quot;'/>
+                      </time>
+                    </b:if>
+                  </b:includable>
+                  <b:includable id='aboutPostAuthor'>
+                    <div class='author-name'>
+                      <a class='g-profile' expr:href='data:post.author.profileUrl' rel='author' title='author profile'>
+                        <span>
+                          <data:post.author.name/>
+                        </span>
+                      </a>
+                    </div>
+                    <div>
+                      <span class='author-desc'>
+                        <data:post.author.aboutMe/>
+                      </span>
+                    </div>
+                  </b:includable>
+                  <b:includable id='addComments'>
+                    <a expr:href='data:post.commentsUrl' expr:onclick='data:post.commentsUrlOnclick'>
+                      <b:message name='messages.postAComment'/>
+                    </a>
+                  </b:includable>
+                  <b:includable id='commentAuthorAvatar'>
+                    <div class='avatar-image-container'>
+                      <img class='author-avatar' expr:src='data:comment.authorAvatarSrc' height='35' width='35'/>
+                    </div>
+                  </b:includable>
+                  <b:includable id='commentDeleteIcon' var='comment'>
+                    <span expr:class='&quot;item-control &quot; + data:comment.adminClass'>
+                      <b:if cond='data:showCmtPopup'>
+                        <div class='goog-toggle-button'>
+                          <div class='goog-inline-block comment-action-icon'/>
+                        </div>
+                        <b:else/>
+                        <a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:messages.deleteComment'>
+                          <img src='https://resources.blogblog.com/img/icon_delete13.gif'/>
+                        </a>
+                      </b:if>
+                    </span>
+                  </b:includable>
+                  <b:includable id='commentForm' var='post'>
+                    <div class='comment-form'>
+                      <a name='comment-form'/>
+                      <h4 id='comment-post-message'><data:messages.postAComment/></h4>
+                      <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
+                        <p><data:this.messages.blogComment/></p>
+                      </b:if>
+                      <b:include data='post' name='commentFormIframeSrc'/>
+                      <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+                      <data:post.cmtfpIframe/>
+                      <script>
+                        BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+                      </script>
+                    </div>
+                  </b:includable>
+                  <b:includable id='commentFormIframeSrc' var='post'>
+                    <a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+                  </b:includable>
+                  <b:includable id='commentItem' var='comment'>
+                    <div class='comment' expr:id='&quot;c&quot; + data:comment.id'>
+                      <b:include cond='data:blog.enabledCommentProfileImages' name='commentAuthorAvatar'/>
+                      <div class='comment-block'>
+                        <div class='comment-author'>
+                          <b:if cond='data:comment.authorUrl'>
+                            <b:message name='messages.authorSaidWithLink'>
+                              <b:param expr:value='data:comment.author' name='authorName'/>
+                              <b:param expr:value='data:comment.authorUrl' name='authorUrl'/>
+                            </b:message>
+                            <b:else/>
+                            <b:message name='messages.authorSaid'>
+                              <b:param expr:value='data:comment.author' name='authorName'/>
+                            </b:message>
+                          </b:if>
+                        </div>
+                        <div expr:class='&quot;comment-body&quot; + (data:comment.isDeleted ? &quot; deleted&quot; : &quot;&quot;)'>
+                          <data:comment.body/>
+                        </div>
+                        <div class='comment-footer'>
+                          <span class='comment-timestamp'>
+                            <a expr:href='data:comment.url' title='comment permalink'>
+                              <data:comment.timestamp/>
+                            </a>
+                            <b:include data='comment' name='commentDeleteIcon'/>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </b:includable>
+                  <b:includable id='commentList' var='comments'>
+                    <div id='comments-block'>
+                      <b:loop values='data:comments' var='comment'>
+                        <b:include data='comment' name='commentItem'/>
+                      </b:loop>
+                    </div>
+                  </b:includable>
+                  <b:includable id='commentPicker' var='post'>
+                    <b:if cond='data:post.showThreadedComments'>
+                      <b:include data='post' name='threadedComments'/>
+                      <b:else/>
+                      <b:include data='post' name='comments'/>
+                    </b:if>
+                  </b:includable>
+                  <b:includable id='comments' var='post'>
+                    <section expr:class='&quot;comments&quot; + (data:post.embedCommentForm ? &quot; embed&quot; : &quot;&quot;)' expr:data-num-comments='data:post.numberOfComments' id='comments'>
+                      <a name='comments'/>
+                      <b:if cond='data:post.allowComments'>
+                        <b:include name='commentsTitle'/>
+                        <div expr:id='data:widget.instanceId + &quot;_comments-block-wrapper&quot;'>
+                          <b:include cond='data:post.comments' data='post.comments' name='commentList'/>
+                        </div>
+                        <b:if cond='data:post.commentPagingRequired'>
+                          <div class='paging-control-container'>
+                            <b:if cond='data:post.hasOlderLinks'>
+                              <a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'>
+                                <data:messages.oldest/>
+                              </a>
+                              <a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'>
+                                <data:messages.older/>
+                              </a>
+                            </b:if>
+                            <span class='comment-range-text'>
+                              <data:post.commentRangeText/>
+                            </span>
+                            <b:if cond='data:post.hasNewerLinks'>
+                              <a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'>
+                                <data:messages.newer/>
+                              </a>
+                              <a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'>
+                                <data:messages.newest/>
+                              </a>
+                            </b:if>
+                          </div>
+                        </b:if>
+                        <div class='footer'>
+                          <b:if cond='data:post.embedCommentForm'>
+                            <b:if cond='data:post.allowNewComments'>
+                              <b:include data='post' name='commentForm'/>
+                              <b:else/>
+                              <data:post.noNewCommentsText/>
+                            </b:if>
+                            <b:else/>
+                            <b:if cond='data:post.allowComments'>
+                              <b:include data='post' name='addComments'/>
+                            </b:if>
+                          </b:if>
+                        </div>
+                      </b:if>
+                      <b:if cond='data:showCmtPopup'>
+                        <div id='comment-popup'>
+                          <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'/>
+                        </div>
+                      </b:if>
+                    </section>
+                  </b:includable>
+                  <b:includable id='commentsTitle'>
+                    <h3 class='title'>
+                      <span class='icon far fa-comment-dots'/> <data:messages.comments/> <data:post.numberOfComments/></h3>
+                  </b:includable>
+                  <b:includable id='feedLinks'>
+                    <b:if cond='!data:view.isPost'> 
+                      <!-- Blog feed links -->
+                      <b:if cond='data:feedLinks'>
+                        <div class='blog-feeds'>
+                          <b:include data='feedLinks' name='feedLinksBody'/>
+                        </div>
+                      </b:if>
+                      <b:else/> 
+                      <!--Post feed links -->
+                      <div class='post-feeds'>
+                        <b:loop values='data:posts' var='post'>
+                          <b:if cond='data:post.allowComments and data:post.feedLinks'>
+                            <b:include data='post.feedLinks' name='feedLinksBody'/>
+                          </b:if>
+                        </b:loop>
+                      </div>
+                    </b:if>
+                  </b:includable>
+                  <b:includable id='feedLinksBody' var='links'>
+                    <div class='feed-links'>
+                      <data:messages.subscribeTo/>
+                      <b:loop values='data:links' var='f'>
+                        <a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'><data:f.name/> (<data:f.feedType/>)</a>
+                      </b:loop>
+                    </div>
+                  </b:includable>
+                  <b:includable id='homePageLink'/>
+                  <b:includable id='iframeComments' var='post'>
+                    <!-- G+ comments, no longer available. The includable is retained for backwards-compatibility. -->
+                  </b:includable>
+                  <b:includable id='inlineAd' var='post'>
+                    <b:if cond='!data:view.isPreview'>
+                      <b:if cond='data:this.adCode or data:this.adClientId or data:blog.adsenseClientId'>
+                        <!-- Ad -->
+                        <div class='inline-ad'>
+                          <b:if cond='data:this.adCode != &quot;&quot;'>
+                            <data:this.adCode/>
+                            <b:else/>
+                            <b:include cond='data:this.adClientId or data:blog.adsenseClientId' name='defaultAdUnit'/>
+                          </b:if>
+                        </div>
+                      </b:if>
+                      <b:else/>
+                      <div class='inline-ad'>
+                        <div class='inline-ad-placeholder'>
+                          <span><b:message name='messages.adsGoHere'/>
+                          </span>
+                        </div>
+                      </div>
+                    </b:if>
+                  </b:includable>
+                  <b:includable id='nextPageLink'/>
+                  <b:includable id='post' var='post'/>
+                  <b:includable id='postBody' var='post'/>
+                  <b:includable id='postBodySnippet'>
+                    <b:eval expr='data:post.body snippet {length: 150, links: false, linebreaks: false}'/>
+                  </b:includable>
+                  <b:includable id='postCommentsAndAd' var='post'/>
+                  <b:includable id='postCommentsLink'>
+                    <span class='icon far fa-comments'/>
+                    <b:include cond='data:post.commentSource != 1' name='commentsLink'/>
+                  </b:includable>
+                  <b:includable id='postFooter' var='post'/>
+                  <b:includable id='postFooterAuthorProfile' var='post'/>
+                  <b:includable id='postHeader' var='post'/>
+                  <b:includable id='postMeta' var='post'>
+                    <b:include data='post' name='postMetadataJSON'/>
+                  </b:includable>
+                  <b:includable id='postPagination'>
+                    <div class='postPagination' id='blog-pager'>
+                      <b:if cond='data:newerPageUrl'>
+                        <a class='previous-page-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:messages.newerPosts'>
+                          <data:messages.newerPosts/>
+                        </a>
+                      </b:if>
+                      <b:if cond='data:olderPageUrl'>
+                        <a class='next-pageL-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:messages.olderPosts'>
+                          <data:messages.olderPosts/>
+                        </a>
+                      </b:if>
+                      <b:if cond='data:view.url != data:blog.homepageUrl'>
+                        <a class='home-page-link' expr:href='data:blog.homepageUrl'>
+                          <data:messages.home/>
+                        </a>
+                      </b:if> 
+                    </div>
+                  </b:includable>
+                  <b:includable id='postTitle' var='post'/>
+                  <b:includable id='previousPageLink'/>
+                  <b:includable id='threadedCommentForm' var='post'>
+                    <div class='comment-form'>
+                      <a name='comment-form'/>
+                      <h4 id='comment-post-message'><data:messages.postAComment/></h4>
+                      <b:if cond='data:this.messages.blogComment != &quot;&quot;'>
+                        <p><data:this.messages.blogComment/></p>
+                      </b:if>
+                      <b:include data='post' name='commentFormIframeSrc'/>
+                      <iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' expr:height='data:cmtIframeInitialHeight ?: &quot;90px&quot;' frameborder='0' id='comment-editor' name='comment-editor' src='' width='100%'/>
+                      <data:post.cmtfpIframe/>
+                      <script>
+                        BLOG_CMT_createIframe(&#39;<data:post.appRpcRelayPath/>&#39;);
+                      </script>
+                    </div>
+                  </b:includable>
+                  <b:includable id='threadedCommentJs' var='post'>
+                    <script async='async' expr:src='data:post.commentSrc'/>
+                    <b:template-script inline='true' name='threaded_comments'/>
+                    <script>
+                      blogger.widgets.blog.initThreadedComments(
+                      <data:post.commentJso/>,
+                      <data:post.commentMsgs/>,
+                      <data:post.commentConfig/>);
+                    </script>
+                  </b:includable>
+                  <b:includable id='threadedComments' var='post'>
+                    <section class='comments threaded' expr:data-embed='data:post.embedCommentForm' expr:data-num-comments='data:post.numberOfComments' id='comments'>
+                      <a name='comments'/>
+                      <b:include name='commentsTitle'/>
+                      <div class='comments-content'>
+                        <b:if cond='data:post.embedCommentForm'>
+                          <b:include data='post' name='threadedCommentJs'/>
+                        </b:if>
+                        <div id='comment-holder'>
+                          <data:post.commentHtml/>
+                        </div>
+                      </div>
+                      <p class='comment-footer'>
+                        <b:if cond='data:post.allowNewComments'>
+                          <b:include data='post' name='threadedCommentForm'/>
+                          <b:else/>
+                          <data:post.noNewCommentsText/>
+                        </b:if>
+                      </p>
+                      <b:if cond='data:showCmtPopup'>
+                        <div id='comment-popup'>
+                          <iframe allowtransparency='allowtransparency' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'/>
+                        </div>
+                      </b:if>
+                    </section>
+                  </b:includable>
+                </b:widget>
+              </b:section>
+            </b:if>
+            <b:include name='MigoMagPageError'/>
+          </div>
+        </main>
+        <b:if cond='!data:view.isError and !data:view.isPage'>
+          <aside class='aside-site end'>
+            <b:section class='sidebar' id='sidebar' name='العمود الجانبي' showaddelement='yes'>
+              <b:widget id='FeaturedPost1' locked='true' title='مشاركة مميزة' type='FeaturedPost' version='2' visible='true'>
+                <b:widget-settings>
+                  <b:widget-setting name='showSnippet'>false</b:widget-setting>
+                  <b:widget-setting name='showPostTitle'>true</b:widget-setting>
+                  <b:widget-setting name='postId'>6732214172255555943</b:widget-setting>
+                  <b:widget-setting name='showFirstImage'>true</b:widget-setting>
+                  <b:widget-setting name='useMostRecentPost'>false</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main' var='this'>
+                  <div class='featured grid grid-1 MigoMag-featured-Post' role='feed'>
+                    <div class='articles'>
+                      <b:loop values='data:posts filter (p =&gt; p.id != data:view.postId)' var='post'>
+                        <article class='article-posts' role='article'>
+                          <div class='box'>
+                            <a class='thumbnail' expr:href='data:post.url'>
+                              <b:if cond='data:post.featuredImage'>
+                                <img expr:alt='data:post.title' expr:src='data:post.featuredImage'/>
+                                <b:else/>
+                                <b:include name='MigoMagDefaultImage'/>
+                              </b:if>
+                            </a>
+                            <div class='box-content'>
+                              <b:if cond='data:post.title != &quot;&quot;'>
+                                <h3 class='post-headding'>
+                                  <a class='title' expr:href='data:post.url'><data:post.title/></a>
+                                </h3>
+                              </b:if>
+                            </div>
+                          </div>
+                        </article>
+                      </b:loop>
+                    </div>
+                  </div>
+                </b:includable>
+                <b:includable id='blogThisShare'/>
+                <b:includable id='bylineByName' var='byline'/>
+                <b:includable id='bylineRegion' var='regionItems'/>
+                <b:includable id='commentsLink'/>
+                <b:includable id='commentsLinkIframe'/>
+                <b:includable id='emailPostIcon'/>
+                <b:includable id='facebookShare'/>
+                <b:includable id='footerBylines'/>
+                <b:includable id='googlePlusShare'/>
+                <b:includable id='headerByline'/>
+                <b:includable id='linkShare'/>
+                <b:includable id='otherSharingButton'/>
+                <b:includable id='platformShare'/>
+                <b:includable id='postAuthor'/>
+                <b:includable id='postCommentsLink'/>
+                <b:includable id='postJumpLink' var='post'/>
+                <b:includable id='postLabels'/>
+                <b:includable id='postLocation'/>
+                <b:includable id='postReactions'/>
+                <b:includable id='postShareButtons'/>
+                <b:includable id='postTimestamp'/>
+                <b:includable id='sharingButton'/>
+                <b:includable id='sharingButtonContent'/>
+                <b:includable id='sharingButtons'/>
+                <b:includable id='sharingButtonsMenu'/>
+                <b:includable id='sharingPlatformIcon'/>
+                <b:includable id='snippetedPostByline'/>
+                <b:includable id='snippetedPostContent'/>
+                <b:includable id='snippetedPostThumbnail'/>
+                <b:includable id='snippetedPostTitle'/>
+                <b:includable id='snippetedPosts'/>
+              </b:widget>
+              <b:widget id='BlogArchive1' locked='true' title='أرشيف' type='BlogArchive' version='2' visible='true'>
+                <b:widget-settings>
+                  <b:widget-setting name='showStyle'>MENU</b:widget-setting>
+                  <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+                  <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+                  <b:widget-setting name='monthPattern'>MMMM</b:widget-setting>
+                  <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+                  <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+                  <b:widget-setting name='chronological'>false</b:widget-setting>
+                  <b:widget-setting name='showPosts'>false</b:widget-setting>
+                  <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main' var='this'>
+                  <b:include name='widget-title'/>
+                  <b:include name='content'/>
+                </b:includable>
+                <b:includable id='content'>
+                  <div class='widget-content'>
+                    <select class='flat' onChange='window.location.href=this.value'>
+                      <b:loop values='data:data' var='i'>
+                        <option expr:value='data:i.url'>
+                          <data:i.name/> | <data:i.post-count/> مشاركة
+                        </option>
+                      </b:loop>
+                    </select>
+                  </div>
+                </b:includable>
+                <b:includable id='flat'/>
+                <b:includable id='hierarchy'/>
+                <b:includable id='interval' var='intervals'/>
+                <b:includable id='posts' var='posts'/>
+              </b:widget>
+              <b:widget id='Label1' locked='true' title='التسميات - قائمة' type='Label' version='2' visible='true'>
+                <b:widget-settings>
+                  <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+                  <b:widget-setting name='display'>LIST</b:widget-setting>
+                  <b:widget-setting name='selectedLabelsList'>أخبار,إضافات القالب,اقتصاد,بنوك,تكنولوجيا,حوادث,رياضة,سيارات,فن,فواكه,فيروس كورونا,هواتف</b:widget-setting>
+                  <b:widget-setting name='showType'>USER_SELECTED</b:widget-setting>
+                  <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main' var='this'>
+                  <b:include name='widget-title'/>
+                  <b:include name='content'/>
+                </b:includable>
+                <b:includable id='cloud'>
+                  <b:loop values='data:labels' var='label'>
+                    <span class='label-size'>
+                      <b:class expr:name='&quot;label-size-&quot; + data:label.cssSize'/>
+                      <a class='label-name' expr:href='data:label.url'>
+                        <data:label.name/>
+                        <b:if cond='data:this.showFreqNumbers'>
+                          <span class='label-count'><data:label.count/>
+                          </span>
+                        </b:if>
+                      </a>
+                    </span>
+                  </b:loop>
+                </b:includable>
+                <b:includable id='content'>
+                  <div class='widget-content'>
+                    <b:class expr:name='data:this.display + &quot;-label-widget-content&quot;'/>
+                    <b:include cond='data:this.display == &quot;list&quot;' name='list'/>
+                    <b:include cond='data:this.display == &quot;cloud&quot;' name='cloud'/>
+                  </div>
+                </b:includable>
+                <b:includable id='list'>
+                  <ul>
+                    <b:loop values='data:labels' var='label'>
+                      <li>
+                        <a class='label-name' expr:href='data:label.url'>
+                          <b:if cond='data:view.search.label == data:label.name'>
+                            <b:class name='active'/>
+                          </b:if>
+                          <data:label.name/>
+                          <b:if cond='data:this.showFreqNumbers'>
+                            <span class='label-count'><data:label.count/>
+                            </span>
+                          </b:if>
+                        </a>
+                      </li>
+                    </b:loop>
+                  </ul>
+                </b:includable>
+              </b:widget>
+              <b:widget id='LinkList1' locked='false' title='قائمة روابط' type='LinkList' version='2' visible='true'>
+                <b:widget-settings>
+                  <b:widget-setting name='link-3'>#</b:widget-setting>
+                  <b:widget-setting name='sorting'>NONE</b:widget-setting>
+                  <b:widget-setting name='link-4'>#</b:widget-setting>
+                  <b:widget-setting name='text-1'>إضافة رابط</b:widget-setting>
+                  <b:widget-setting name='link-1'>#</b:widget-setting>
+                  <b:widget-setting name='text-0'>إضافة رابط</b:widget-setting>
+                  <b:widget-setting name='link-2'>#</b:widget-setting>
+                  <b:widget-setting name='text-3'>إضافة رابط</b:widget-setting>
+                  <b:widget-setting name='link-0'>#</b:widget-setting>
+                  <b:widget-setting name='text-2'>إضافة رابط</b:widget-setting>
+                  <b:widget-setting name='text-4'>إضافة رابط</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main'>
+                  <b:include name='widget-title'/>
+                  <b:include name='content'/>
+                </b:includable>
+                <b:includable id='content'>
+                  <div class='widget-content'>
+                    <ul>
+                      <b:loop values='data:links' var='link'>
+                        <li><a expr:href='data:link.target'><data:link.name/></a></li>
+                      </b:loop>
+                    </ul>
+                  </div>
+                </b:includable>
+              </b:widget>
+              <b:widget id='Label2' locked='true' title='التسميات - سحابة' type='Label' version='2' visible='true'>
+                <b:widget-settings>
+                  <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+                  <b:widget-setting name='display'>CLOUD</b:widget-setting>
+                  <b:widget-setting name='selectedLabelsList'/>
+                  <b:widget-setting name='showType'>ALL</b:widget-setting>
+                  <b:widget-setting name='showFreqNumbers'>true</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main' var='this'>
+                  <b:include name='widget-title'/>
+                  <b:include name='content'/>
+                </b:includable>
+                <b:includable id='cloud'>
+                  <b:loop values='data:labels' var='label'>
+                    <span class='label-size'>
+                      <b:class expr:name='&quot;label-size-&quot; + data:label.cssSize'/>
+                      <a class='label-name' expr:href='data:label.url'>
+                        <b:if cond='data:view.search.label == data:label.name'>
+                          <b:class name='active'/>
+                        </b:if>
+                        <data:label.name/>
+                        <b:if cond='data:this.showFreqNumbers'>
+                          <span class='label-count'><data:label.count/>
+                          </span>
+                        </b:if>
+                      </a>
+                    </span>
+                  </b:loop>
+                </b:includable>
+                <b:includable id='content'>
+                  <div class='widget-content'>
+                    <b:class expr:name='data:this.display + &quot;-label-widget-content&quot;'/>
+                    <b:include cond='data:this.display == &quot;cloud&quot;' name='cloud'/>
+                  </div>
+                </b:includable>
+                <b:includable id='list'>
+                  <ul>
+                    <b:loop values='data:labels' var='label'>
+                      <li>
+                        <a class='label-name' expr:href='data:label.url'>
+                          <data:label.name/>
+                          <b:if cond='data:this.showFreqNumbers'>
+                            <span class='label-count'><data:label.count/>
+                            </span>
+                          </b:if>
+                        </a>
+                      </li>
+                    </b:loop>
+                  </ul>
+                </b:includable>
+              </b:widget>
+              <b:widget id='PopularPosts1' locked='true' title='مشاركات شائعة' type='PopularPosts' version='2' visible='true'>
+                <b:widget-settings>
+                  <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
+                  <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+                  <b:widget-setting name='showSnippets'>false</b:widget-setting>
+                  <b:widget-setting name='timeRange'>ALL_TIME</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main' var='this'>
+                  <b:include name='widget-title'/>
+                  <div class='widget-content'>
+                    <div class='featured popular'>
+                      <ol>
+                        <b:loop values='data:posts filter (p =&gt; p.id != data:view.postId)' var='post'>
+                          <li>
+                            <div class='box'>
+                              <a class='thumbnail' expr:href='data:post.url'>
+                                <b:if cond='data:post.featuredImage'>
+                                  <b:with value='data:post.featuredImage.isResizable ? resizeImage(data:post.featuredImage, 72, &quot;1:1&quot;) : data:post.thumbnail' var='image'>
+                                    <img class='lazy' expr:alt='data:post.title' expr:data-src='data:image' height='72' width='72'/>
+                                  </b:with>
+                                  <b:else/>
+                                  <b:include name='MigoMagDefaultImage'/>
+                                </b:if>
+                              </a>
+                              <div class='box-content'>
+                                <b:if cond='data:post.title != &quot;&quot;'>
+                                  <a class='title' expr:href='data:post.url'>
+                                    <data:post.title/>
+                                  </a>
+                                </b:if>
+                                <div class='meta'>
+                                  <i class='icon far fa-calendar-alt'/>
+                                  <b:include data='post' name='MigoMagPostTimestamp'/>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </b:loop>
+                      </ol>
+                    </div>
+                  </div>
+                </b:includable>
+                <b:includable id='MigoMagPostTimestamp'>
+                  <b:if cond='data:post.url'>
+                    <meta expr:content='data:post.url.canonical'/>
+                    <time class='time' expr:datetime='data:post.date.iso8601' expr:title='data:post.date format &quot;dd MM y&quot;'>
+                      <b:eval expr='data:post.date format &quot;dd MMM y&quot;'/>
+                    </time>
+                  </b:if>
+                </b:includable>
+                <b:includable id='blogThisShare'/>
+                <b:includable id='bylineByName' var='byline'/>
+                <b:includable id='bylineRegion' var='regionItems'/>
+                <b:includable id='commentsLink'/>
+                <b:includable id='commentsLinkIframe'/>
+                <b:includable id='emailPostIcon'/>
+                <b:includable id='facebookShare'/>
+                <b:includable id='footerBylines'/>
+                <b:includable id='googlePlusShare'/>
+                <b:includable id='headerByline'/>
+                <b:includable id='linkShare'/>
+                <b:includable id='otherSharingButton'/>
+                <b:includable id='platformShare'/>
+                <b:includable id='postAuthor'/>
+                <b:includable id='postCommentsLink'/>
+                <b:includable id='postJumpLink' var='post'/>
+                <b:includable id='postLabels'/>
+                <b:includable id='postLocation'/>
+                <b:includable id='postReactions'/>
+                <b:includable id='postShareButtons'/>
+                <b:includable id='postTimestamp'/>
+                <b:includable id='sharingButton'/>
+                <b:includable id='sharingButtonContent'/>
+                <b:includable id='sharingButtons'/>
+                <b:includable id='sharingButtonsMenu'/>
+                <b:includable id='sharingPlatformIcon'/>
+                <b:includable id='snippetedPostByline'/>
+                <b:includable id='snippetedPostContent'/>
+                <b:includable id='snippetedPostThumbnail'/>
+                <b:includable id='snippetedPostTitle'/>
+                <b:includable id='snippetedPosts'/>
+              </b:widget>
+              <b:widget id='ContactForm1' locked='true' title='نموذج الاتصال' type='ContactForm' version='2' visible='true'>
+                <b:includable id='main'>
+                  <b:include name='widget-title'/>
+                  <b:include name='content'/>
+                </b:includable>
+                <b:includable id='content'>
+                  <div class='contact-form-widget'>
+                    <div class='form'>
+                      <form name='contact-form'>
+                        <p/>
+                        <data:contactFormNameMsg/>
+                        <br/>
+                        <input class='contact-form-name' expr:id='data:widget.instanceId + &quot;_contact-form-name&quot;' name='name' size='30' type='text' value=''/>
+                        <p/>
+                        <data:contactFormEmailMsg/> 
+                        <span style='font-weight: bolder;'>*
+                        </span>
+                        <br/>
+                        <input class='contact-form-email' expr:id='data:widget.instanceId + &quot;_contact-form-email&quot;' name='email' size='30' type='text' value=''/>
+                        <p/>
+                        <data:contactFormMessageMsg/> 
+                        <span style='font-weight: bolder;'>*
+                        </span>
+                        <br/>
+                        <textarea class='contact-form-email-message' cols='25' expr:id='data:widget.instanceId + &quot;_contact-form-email-message&quot;' name='email-message' rows='5'/>
+                        <p/>
+
+                        <input class='contact-form-button contact-form-button-submit' expr:id='data:widget.instanceId + &quot;_contact-form-submit&quot;' expr:value='data:contactFormSendMsg' type='button'/>
+                        <p/>
+                        <div style='text-align: center; max-width: 222px; width: 100%'>
+                          <p class='contact-form-error-message' expr:id='data:widget.instanceId + &quot;_contact-form-error-message&quot;'/>
+                          <p class='contact-form-success-message' expr:id='data:widget.instanceId + &quot;_contact-form-success-message&quot;'/>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </b:includable>
+              </b:widget>
+            </b:section>
+          </aside>
+        </b:if>
+      </div>
+    </div>
+    <footer class='footer-site'>
+      <div class='container'>
+        <div class='blog-info'>
+          <b:section class='blog-logo' id='footerLofo' maxwidgets='1' name='الشعار في الفوتر' showaddelement='yes'>
+            <b:widget id='Image2' locked='true' title='الشعار في الفوتر' type='Image' version='2' visible='true'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'>https://3.bp.blogspot.com/-yliUzmavyUM/Xw9lnlxzCGI/AAAAAAAAC5Q/-MTlTZjRxpYNVsF6m0Qv06tDnp2MSiOfwCK4BGAYYCw/s320/3333.png</b:widget-setting>
+                <b:widget-setting name='displayHeight'>320</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>632</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='displayWidth'>315</b:widget-setting>
+                <b:widget-setting name='link'/>
+                <b:widget-setting name='caption'/>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <a class='nav-logo-link' expr:href='data:blog.homepageUrl'>
+                  <img expr:alt='data:blog.title' expr:id='data:widget.instanceId + &quot;_img&quot;' expr:src='data:sourceUrl'/>
+                </a>
+              </b:includable>
+              <b:includable id='content'/>
+            </b:widget>
+          </b:section>
+          <a class='blog-title' expr:href='data:blog.homepageUrl'><data:blog.title/></a>
+          <b:section id='footerDes' maxwidgets='1' name='وصف المدونة في الفوتر' showaddelement='yes'>
+            <b:widget id='Text1' locked='true' title='وصف قصير' type='Text' version='2' visible='true'>
+              <b:widget-settings>
+                <b:widget-setting name='content'>يمكنك تغيير هذا النص بالوصف الخاص بمدونتك .. توجه إلى التنسيق أو التخطيط وفي أسفل الصفحة ابحث عن أداة وصف المدونة واحذف الوصف الحالي بالوصف الخاص بك.</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <b:include name='widget-title'/>
+                <div class='widget-content'>
+                  <data:content/>
+                </div>
+              </b:includable>
+            </b:widget>
+          </b:section>
+          <b:section class='add-widget-footer' id='add-widget-footer' name='إضافة ويدجيت في الفوتر' showaddelement='yes'>
+            <b:widget id='LinkList2' locked='true' title='تابعونا على مواقع التواصل الاجتماعي' type='LinkList' version='2' visible='true'>
+              <b:widget-settings>
+                <b:widget-setting name='text-10'>youtube</b:widget-setting>
+                <b:widget-setting name='sorting'>NONE</b:widget-setting>
+                <b:widget-setting name='link-1'>https://www.pinterest.com/</b:widget-setting>
+                <b:widget-setting name='link-2'>https://www.flickr.com/</b:widget-setting>
+                <b:widget-setting name='link-12'>http://m.me/MigoMagSupport</b:widget-setting>
+                <b:widget-setting name='link-0'>https://vimeo.com/</b:widget-setting>
+                <b:widget-setting name='link-11'>https://web.whatsapp.com/</b:widget-setting>
+                <b:widget-setting name='link-10'>https://www.youtube.com/</b:widget-setting>
+                <b:widget-setting name='text-9'>instagram</b:widget-setting>
+                <b:widget-setting name='link-9'>https://www.instagram.com/</b:widget-setting>
+                <b:widget-setting name='text-8'>twitter</b:widget-setting>
+                <b:widget-setting name='link-7'>https://web.telegram.org/</b:widget-setting>
+                <b:widget-setting name='link-8'>https://twitter.com/explore</b:widget-setting>
+                <b:widget-setting name='link-5'>https://www.snapchat.com/</b:widget-setting>
+                <b:widget-setting name='link-6'>https://www.facebook.com/MigoMagSupport</b:widget-setting>
+                <b:widget-setting name='link-3'>https://github.com/</b:widget-setting>
+                <b:widget-setting name='link-4'>https://www.linkedin.com/</b:widget-setting>
+                <b:widget-setting name='text-1'>pinterest</b:widget-setting>
+                <b:widget-setting name='text-0'>vimeo</b:widget-setting>
+                <b:widget-setting name='text-3'>github</b:widget-setting>
+                <b:widget-setting name='text-2'>flickr</b:widget-setting>
+                <b:widget-setting name='text-5'>snapchat</b:widget-setting>
+                <b:widget-setting name='text-4'>linkedin</b:widget-setting>
+                <b:widget-setting name='text-7'>telegram</b:widget-setting>
+                <b:widget-setting name='text-6'>facebook</b:widget-setting>
+                <b:widget-setting name='text-11'>whatsapp</b:widget-setting>
+                <b:widget-setting name='text-12'>messenger</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <b:include name='widget-title'/>
+                <b:include name='content'/>
+              </b:includable>
+              <b:includable id='content'>
+                <div class='widget-content'>
+                  <ul class='social-link'>
+                    <b:loop values='data:links' var='link'>
+                      <li expr:class='&quot;bg-&quot; + data:link.name'><a expr:href='data:link.target' target='_blank'><span class='text-none'><data:link.name/></span></a></li>
+                    </b:loop>
+                  </ul>
+                </div>
+              </b:includable>
+            </b:widget>
+            <b:widget id='PageList2' locked='true' title='الصفحات' type='PageList' version='2' visible='true'>
+              <b:widget-settings>
+                <b:widget-setting name='pageListJson'><![CDATA[{'home': {'href': 'https://migomagfree.blogspot.com/', 'title': 'الصفحة الرئيسية', 'position': 0}, 'link0': {'href': '#', 'title': 'خريطة الموقع', 'position': 1}, 'link1': {'href': '#', 'title': 'من نحن', 'position': 2}, 'link2': {'href': '#', 'title': 'اتصل بنا', 'position': 3}, 'link3': {'href': '#', 'title': 'سياسة الخصوصية', 'position': 4}, 'link4': {'href': '#', 'title': 'شروط الاستخدام', 'position': 5}}]]></b:widget-setting>
+                <b:widget-setting name='homeTitle'>الصفحة الرئيسية</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+                <b:include name='content'/>
+              </b:includable>
+              <b:includable id='content'>
+                <div class='widget-content'>
+                  <b:include name='pageList'/>
+                </div>
+              </b:includable>
+              <b:includable id='overflowButton'>
+                <b:include name='verticalMoreIcon'/>
+              </b:includable>
+              <b:includable id='overflowablePageList'>
+                <div class='overflowable-container'>
+                  <div class='overflowable-contents'>
+                    <div class='container'>
+                      <b:with value='true' var='overflow'>
+                        <b:with value='&quot;tabs&quot;' var='pageListClass'>
+                          <b:include name='pageList'/>
+                        </b:with>
+                      </b:with>
+                    </div>
+                  </div>
+                  <div class='overflow-button hidden'>
+                    <b:include name='overflowButton'/>
+                  </div>
+                </div>
+              </b:includable>
+              <b:includable id='pageLink'>
+                <li>
+                  <b:class cond='data:overflow' name='overflowable-item'/>
+                  <b:class cond='data:link.isCurrentPage' name='selected'/>
+                  <a expr:href='data:link.href'><data:link.title/></a>
+                </li>
+              </b:includable>
+              <b:includable id='pageList'>
+                <ul>
+                  <b:class cond='data:pageListClass' expr:name='data:pageListClass'/>
+                  <b:loop values='data:links' var='link'>
+                    <b:include name='pageLink'/>
+                  </b:loop>
+                </ul>
+              </b:includable>
+            </b:widget>
+          </b:section>
+        </div>
+      </div>
+      <div class='foot' id='foot'>
+        <div class='container'>
+          <span class='copyright-blog'>جميع الحقوق محفوظة لـ <a expr:href='data:blog.homepageUrl'>
+              <data:blog.title/>
+            </a>
+          </span>
+          <span class='copyright-desing'>
+            <a href='http://m.me/MigoMagSupport' rel='nofollow' target='_blank' title='للتواصل مع الدعم الفني للقالب'>
+              <img src='https://3.bp.blogspot.com/-yliUzmavyUM/Xw9lnlxzCGI/AAAAAAAAC5Q/-MTlTZjRxpYNVsF6m0Qv06tDnp2MSiOfwCK4BGAYYCw/s24/3333.png'/>
+              <span class='text-none'>ميجو ماج التيمت</span></a>
+          </span>
+        </div>
+      </div>
+    </footer>
+    <b:include name='MigoMagSearch'/>
+    <b:section id='MigoMagShareLik' maxwidgets='1' name='تفعيل أو تعطيل ايقونات المشاركة على مواقع التواصل' showaddelement='no'>
+      <b:widget id='HTML4' locked='true' title='ايقونات المشاركة' type='HTML' version='2' visible='true'>
+        <b:widget-settings>
+          <b:widget-setting name='content'>عند تفعيل هذه الأداة يمكن للمستخدمين مشاركة الصفحة الحالية على مواقع التواصل المختلفة بما فيها الواتساب وتليجرام وفيسبوك ماسنجر</b:widget-setting>
+        </b:widget-settings>
+        <b:includable id='main'>
+          <b:if cond='!data:view.isError'>
+            <span id='open-share'>
+              <span class='icon fa fa-share-alt bg-share'/>
+            </span>
+            <div id='share-link'>
+              <ul class='share-link'>
+                <li class='bg-whatsapp'>
+                  <a data-action='share/whatsapp/share' expr:href='&quot;https://api.whatsapp.com/send?text=&quot; + data:blog.pageName + &quot;  &quot; + data:blog.url' target='_blank' title='شارك الصفحة مع أصدقائك على الواتساب'>
+                    <span class='icon fab fa-whatsapp'/>
+                  </a>
+                </li>
+                <li class='bg-telegram'>
+                  <a expr:href='&quot;https://telegram.me/share/url?text=&quot; + data:blog.pageName + &quot;&quot; + data:blog.url' target='_blank' title='شارك الصفحة مع أصدقائك على تليجرام'>
+                    <span class='icon fab fa-telegram-plane'/></a>
+                </li>
+                <li class='bg-messenger'>
+                  <a expr:href='&quot;https://www.facebook.com/dialog/send?link=&quot; + data:blog.url + &quot;&amp;name=&quot; + data:blog.pageName + &quot;&amp;app_id=736541813854798&amp;redirect_uri=&quot; + data:blog.homepageUrl + &quot;&amp;display=popup&quot;' target='_blank' title='شارك الصفحة مع أصدقائك على فيسبوك مسنجر'>
+                    <span class='icon fab fa-facebook-messenger'/>
+                  </a>
+                </li>
+                <li class='bg-facebook'>
+                  <a expr:href='&quot;https://www.facebook.com/sharer/sharer.php?u=&quot; + data:blog.url' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' target='_blank' title='شارك الصفحة على فيسبوك'>
+                    <span class='icon fab fa-facebook-f'/>
+                  </a>
+                </li>
+                <li class='bg-twitter'>
+                  <a expr:href='&quot;https://twitter.com/intent/tweet?text=&quot; + data:blog.pageName + &quot; &quot; + data:blog.url' target='_blank' title='شارك الصفحة على تويتر'>
+
+                    <span class='icon fab fa-twitter'/></a>
+                </li>
+                <li class='bg-linkedin'>
+                  <a expr:href='&quot;https://www.linkedin.com/shareArticle?mini=true&amp;url=&quot; + data:blog.url' expr:onclick='&quot;window.open(this.href, \&quot;_blank\&quot;, \&quot;height=430,width=640\&quot;); return false;&quot;' target='_blank' title='شارك الصفحة على لينكد إن'>
+                    <span class='icon fab fa-linkedin-in'/>
+                  </a>
+                </li>
+                <li class='bg-pinterest'>
+                  <a expr:href='&quot;https://pinterest.com/pin/create/button/?url=&quot; + data:blog.url' target='_blank' title='شارك الصفحة على بنترست'> 
+                    <span class='icon fab fa-pinterest bg-pinterest-p'/></a>
+                </li>
+
+                <li class='bg-envelope'>
+                  <a expr:href='&quot;mailto:?subject=&quot; + data:blog.pageName + &quot;  &quot; + data:blog.url' target='_blank' title='شارك الصفحة مع أصدقائك بالبريد الالكتروني'>
+                    <span class='icon fas fa-envelope bg-envelope'/></a>
+                </li>
+              </ul>
+              <div id='close-share'/>
+            </div>
+          </b:if>
+        </b:includable>
+      </b:widget>
+    </b:section>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'/>
+
+
+<script>//<![CDATA[
+function MigoMagAddClass(o,n,c){$(o).on("click",function(){$(n).addClass(c)})}function MigoMagRemoveClass(o,n,c){$(o).on("click",function(){$(n).removeClass(c)})}function MigoMagToggleClass(o,n,c){$(o).on("click",function(){$(n).toggleClass(c)})}
+MigoMagAddClass("#open_menu", "#navbar-overlay, #nav", "toggle"),MigoMagRemoveClass("#navbar-close", "#navbar-overlay, #nav", "toggle"),MigoMagAddClass("#open-search", "#form-search", "toggle"),MigoMagRemoveClass("#close-search", "#form-search", "toggle"),MigoMagAddClass("#open-share", "#share-link,#close-share", "toggle"),MigoMagRemoveClass("#close-share", "#share-link,#close-share", "toggle");
+//]]>
+    </script>
+<script>
+!function(r){function e(){for(var e,t,n=0;n&lt;l.length;n++)e=l[n],0&lt;=(t=e.getBoundingClientRect()).top&amp;&amp;0&lt;=t.left&amp;&amp;t.top&lt;=(r.innerHeight||document.documentElement.clientHeight)&amp;&amp;function(e,t){var n=new Image,r=e.getAttribute(&quot;data-src&quot;);n.onload=function(){e.parent?e.parent.replaceChild(n,e):e.src=r,t&amp;&amp;t()},n.src=r}(l[n],function(){l.splice(n,n)})}for(var l=new Array,t=function(e,t){if(document.querySelectorAll)t=document.querySelectorAll(e);else{var n=document,r=n.styleSheets[0]||n.createStyleSheet();r.addRule(e,&quot;f:b&quot;);for(var l=n.all,c=0,o=[],i=l.length;c&lt;i;c++)l[c].currentStyle.f&amp;&amp;o.push(l[c]);r.removeRule(0),t=o}return t}(&quot;img.lazy&quot;),n=0;n&lt;t.length;n++)l.push(t[n]);e(),function(e,t){r.addEventListener?this.addEventListener(e,t,!1):r.attachEvent?this.attachEvent(&quot;on&quot;+e,t):this[&quot;on&quot;+e]=t}(&quot;scroll&quot;,e)}(this);
+    </script>
+  </body>
+</html>
